@@ -64,8 +64,15 @@ public class ValidacoesListaTests
         var resultadoEsperado = new List<int> { 10, 14, 16, 18 };
         
         // Act
+        var listaMultiplicada = new List<int>(); 
+        foreach(var numero in lista)
+        {
+                listaMultiplicada.Add(numero * 2);
+        }
 
         // Assert
+
+        Assert.Equal(resultadoEsperado, listaMultiplicada);
     }
 
     [Fact]
