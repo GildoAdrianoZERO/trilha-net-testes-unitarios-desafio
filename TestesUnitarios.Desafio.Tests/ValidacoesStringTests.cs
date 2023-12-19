@@ -49,18 +49,19 @@ public class ValidacoesStringTests
         var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
-        //TODO: Corrigir o Assert.False com base no retorno da chamada ao método
-        Assert.False(true);
+        //TODO: Corrigir o Assert.False com base no retorno da chamada ao método (feito)
+        Assert.False(resultado);
     }
 
-    //TODO: Corrigir a anotação [Fact]
+    //TODO: Corrigir a anotação [Fact] (feito)
+    [Fact]
     public void TextoDeveTerminarComAPalavraProcurado()
     {
-        //TODO: Corrigir a variável "textoProcurado" seção Arrange
+        //TODO: Corrigir a variável "textoProcurado" seção Arrange (fetio)
 
         // Arrange
         var texto = "Começo, meio e fim do texto procurado";
-        var textoProcurado = "teste";
+        var textoProcurado = "procurado";
 
         // Act
         var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
